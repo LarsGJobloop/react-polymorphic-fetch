@@ -1,6 +1,7 @@
 import './App.css'
 import { BasicFetch } from './components/BasicFetch/BasicFetch'
 import { LinkExternal } from './components/LinkExternal/LinkExternal'
+import { PolymorphicFetch } from './components/PolymorphicFetch/PolymorphicFetch'
 
 function App() {
   return (
@@ -55,7 +56,7 @@ function App() {
           </footer>
         </section>
 
-        <section id='basic-fetch top' className='section'>
+        <section id='basic-fetch' className='section'>
           <header>
             <h2>Basic Fetch</h2>
           </header>
@@ -87,6 +88,63 @@ function App() {
                   >
                     HTTP Status Codes
                   </LinkExternal>
+                </li>
+              </ul>
+            </nav>
+          </footer>
+        </section>
+
+        <section id='polymorphic-fetch' className='section'>
+          <header>
+            <h2>Polymorphic Fetch</h2>
+          </header>
+
+          <section className='section-content'>
+            <h3>
+              Introduce the problem
+            </h3>
+            <h3>
+              Show an example
+            </h3>
+            <PolymorphicFetch />
+          </section>
+
+          <footer>
+            <nav>
+              <h3>References</h3>
+              <ul>
+                <li>
+                  <LinkExternal
+                    href='https://www.typescriptlang.org/docs/handbook/2/generics.html'
+                  >
+                    TypeScript Generics
+                  </LinkExternal>
+                </li>
+                <li>
+                  <h4>Wikipedia Links</h4>
+                  <ul>
+                    <li>
+                      <LinkExternal
+                        href='https://en.wikipedia.org/wiki/Polymorphism_(computer_science)'
+                      >
+                        Polymorphism (Computer Science)
+                      </LinkExternal>
+                    </li>
+                    <li>
+                      <LinkExternal
+                        href='https://en.wikipedia.org/wiki/Parametric_polymorphism'
+                      >
+                        Function Polymorphism
+                      </LinkExternal>
+                    </li>
+                    <li>
+                      <LinkExternal
+                        href='https://en.wikipedia.org/wiki/Generic_function'
+                      >
+                        Generic Functions
+                      </LinkExternal>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </nav>
