@@ -1,34 +1,65 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { LinkExternal } from './components/LinkExternal/LinkExternal'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='App'>
+      <header className='Navbar glass-frosted'>
+        <h1>Polymorphic Fetch</h1>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#top">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main className='Main'>
+
+        <section id='introduction top' className='section'>
+          <header>
+            <h2>Introduction</h2>
+          </header>
+
+          <section className='section-content'>
+            <h3>
+              Introduce the problem
+            </h3>
+            <h3>
+              Show an example
+            </h3>
+            <h3>
+              Introduce the solution
+            </h3>
+          </section>
+
+          <footer>
+            <nav>
+              <h3>References</h3>
+              <ul>
+                <li>
+                  <LinkExternal
+                    href='https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API'
+                  >
+                    Fetch Documentation
+                  </LinkExternal>
+                </li>
+              </ul>
+            </nav>
+          </footer>
+        </section>
+
+      </main>
+
+      <footer id='about' className='About glass-smoked'>
+        <h2>&copy; Lars Gunnar</h2>
+      </footer>
+    </div>
   )
 }
 
